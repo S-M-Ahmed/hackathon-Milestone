@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Segoe UI',  Verdana;
+    background: linear-gradient(to top, #208326, #5981be);
+    padding: 20px;
+}
+
+
+  
+  .cv-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  .left-sidebar {
+    background-color: #2c5d50;
+    color: white;
+    width: 35%;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .profile-pic {
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    
+  }
+ 
+  
+  .about-me, .skills {
+    margin-top: 20px;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    background-color: white;
+    color:#2c5d50 ;
+    text-align: center;
+  }
+  
+  ul {
+    list-style: none;
+    margin-top: 10px;
+  }
+  
+  ul li {
+    margin-bottom: 8px;
+    font-size: 1;
+  }
+  
+  .skills ul {
+    margin-top: 10px;
+  }
+  
+  .main-content {
+    width: 65%;
+    padding: 20px;
+  }
+  
+  .personal-info h1 {
+    color: #2c5d50;
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+  }
+  
+  .personal-info p {
+    margin-bottom: 10px;
+  }
+  
+  .experience h2, .education h2, .skills-summary h2 {
+    background-color:  #2c5d50;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .job, .school {
+    margin-bottom: 15px;
+  }
+  
+  .job h3, .school h3 {
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .job span {
+    display: block;
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 5px;
+  }
+  
+  .skill {
+    background-color: #2c5d50;
+    color: white;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+/* Hidden Class for Toggle */
+.hidden {
+    display: none;
+}
+
+/* Button Styling */
+.toggle-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #2c5d50;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #3f7968;
+    transform: scale(1.05);
+}
+
+@media (max-width:768px) {
+    .left-sidebar{
+        padding: 3px;  
+        width: 40%;
+    }
+    .main-content{
+        padding: 3px;
+    }
+    .cv-container{
+        margin: 5px;
+    }
+    
+}
